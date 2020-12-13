@@ -1,0 +1,80 @@
+.svg-container {
+    width: 400px;
+    box-shadow: 0px 1px 10px 5px #ddd;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.svg-container svg {
+    width: 100%;
+    height: 400px;
+}
+
+#Vector_2 {
+    animation: changeColor 3s infinite alternate;
+
+}
+
+@keyframes changeColor {
+    0% {
+        fill: red;
+
+    }
+    100% {
+        fill: blue;
+    }
+}
+
+#RightHand {
+    animation: rotateHand 2s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+@keyframes rotateHand {
+    0% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(10deg);
+    }
+}
+
+#LeftHand {
+    animation: rotateHand 2s infinite alternate;
+    transform-origin: top left;
+    transform-box: fill-box;
+}
+
+#Ball {
+    animation: Ball 1s infinite ease-out alternate;
+    transform-origin: unset;
+}
+
+@keyframes Ball {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+#RightLeg {
+    animation: rLeg 1s infinite alternate;
+    transform-origin: right;
+    transform-box: fill-box;
+}
+
+@keyframes rLeg {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+#BG{
+    
+}
